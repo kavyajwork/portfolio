@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slack Circles · Kavya Jayaprakash</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav">
+    <a href="../index.html" class="nav-logo">Kavya Jayaprakash</a>
+    <div class="nav-links">
+      <a href="../index.html#work">← back to work</a>
+      <a href="../index.html#about">about</a>
+      <a href="#" target="_blank">resume</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Case Study · UX / Product Design · 2024</p>
+      <p class="hero-company">Slack Circles</p>
+      <h1 class="hero-h1">Designing Ambient<br />Collaboration for<br /><em>Hybrid Teams.</em></h1>
+      <p class="hero-sub">Helping remote teams feel present, not just connected.</p>
+    </div>
+  </header>
+
+  <!-- ── HERO IMAGE ── -->
+  <div class="full-img-wrap">
+    <img src="s3.png" alt="Slack Circles — main interface showing Live sessions, Highlights, and Circles Feed" class="full-img" />
+  </div>
+
+  <!-- ── META STRIP ── -->
+  <section class="container">
+    <div class="meta-grid">
+      <div class="meta-cell">
+        <span class="meta-label">Timeline</span>
+        <span class="meta-val">8 weeks<br /><small>Mar – May 2024</small></span>
+      </div>
+      <div class="meta-cell">
+        <span class="meta-label">My role</span>
+        <span class="meta-val">Sole Product Designer<br /><small>Research → Interaction → Visual</small></span>
+      </div>
+      <div class="meta-cell">
+        <span class="meta-label">Tools</span>
+        <span class="meta-val">Figma · Miro<br /><small>ProtoPie · FigJam</small></span>
+      </div>
+      <div class="meta-cell">
+        <span class="meta-label">Skills</span>
+        <span class="meta-val">UX Research<br /><small>Interaction · Visual Design</small></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── IMPACT BAR ── -->
+  <section class="container">
+    <div class="impact-bar">
+      <p class="impact-eyebrow">TL;DR</p>
+      <p class="impact-lead">Slack is efficient — but it was never designed for human presence. I designed Circles: a new layer inside Slack that makes ambient collaboration possible for hybrid teams without adding noise.</p>
+      <div class="impact-stats">
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">core features designed &amp; prototyped</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">5</span>
+          <span class="stat-label">moderated usability sessions conducted</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">distinct user archetypes researched</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">↓</span>
+          <span class="stat-label">from intentional effort to ambient presence</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider" /></div>
+
+  <!-- ── CONTEXT ── -->
+  <section class="container" id="context">
+    <p class="section-eyebrow">Context</p>
+    <h2 class="section-h2">Slack is built for communication.<br />Not for <em>presence.</em></h2>
+    <p class="section-body">Remote work gave us tools to stay connected — but not to feel present. There's a gap between sending a message and sharing a moment. Between being online and feeling part of a team.</p>
+    <div class="two-col">
+      <div class="insight-card insight-before">
+        <p class="insight-label">Being connected</p>
+        <ul class="insight-list">
+          <li>Slack threads &amp; channels</li>
+          <li>Scheduled meetings</li>
+          <li>Status updates</li>
+          <li>Intentional communication</li>
+        </ul>
+      </div>
+      <div class="insight-card insight-after">
+        <p class="insight-label">Feeling present</p>
+        <ul class="insight-list">
+          <li>Knowing someone's around</li>
+          <li>Joining spontaneously</li>
+          <li>Casual visibility</li>
+          <li>Ambient awareness</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider" /></div>
+
+  <!-- ── PROBLEM ── -->
+  <section class="container" id="problem">
+    <p class="section-eyebrow">The Problem</p>
+    <h2 class="section-h2">Remote work creates<br /><em>invisible gaps.</em></h2>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <span class="problem-icon">?</span>
+        <p class="problem-title">"Did I miss something?"</p>
+        <p class="problem-desc">Anxiety from not knowing what happened in the office — decisions made over lunch, hallway chats, spontaneous syncs.</p>
+      </div>
+      <div class="problem-card">
+        <span class="problem-icon">→</span>
+        <p class="problem-title">Hesitation to ask for help</p>
+        <p class="problem-desc">Pinging someone feels like an interruption. There's no way to casually check if someone's free without scheduling a meeting.</p>
+      </div>
+      <div class="problem-card">
+        <span class="problem-icon">○</span>
+        <p class="problem-title">Presence is invisible</p>
+        <p class="problem-desc">Unless you actively post, no one knows you're there. Remote visibility requires deliberate effort — every single time.</p>
+      </div>
+      <div class="problem-card">
+        <span class="problem-icon">↔</span>
+        <p class="problem-title">No casual interaction</p>
+        <p class="problem-desc">Coffee chats, quick reactions, spontaneous collaboration — none of this happens on Slack without intentional effort.</p>
+      </div>
+    </div>
+    <div class="consequence-bar">
+      <span>This results in →</span>
+      <span class="consequence-tag">Isolation</span>
+      <span class="consequence-tag">Reduced collaboration</span>
+      <span class="consequence-tag">Low team awareness</span>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider" /></div>
+
+  <!-- ── RESEARCH ── -->
+  <section class="container" id="research">
+    <p class="section-eyebrow">Research Approach</p>
+    <h2 class="section-h2">Journey mapping &amp; empathy mapping<br />across three <em>distinct user types.</em></h2>
+    <p class="section-body">I mapped the emotional journey of remote, hybrid, and new-to-team users — focusing on where presence breaks down, not just where communication fails.</p>
+  </section>
+
+  <!-- Journey Maps — full width, one per user -->
+  <div class="img-section-label container">
+    <p class="img-section-tag">Journey Maps</p>
+    <p class="img-section-desc">Three users. Three emotional arcs. One shared gap.</p>
+  </div>
+
+  <div class="full-img-wrap">
+    <img src="s4.png" alt="Arjun's journey map — hybrid engineer, misses in-office context" class="full-img" />
+    <p class="img-caption">Arjun — Hybrid engineer. Misses decisions made in person. Feels out of sync on remote days.</p>
+  </div>
+  <div class="full-img-wrap" style="margin-top: 20px;">
+    <img src="s5.png" alt="Maya's journey map — remote designer, feels disconnected and hesitant" class="full-img" />
+    <p class="img-caption">Maya — Remote designer. Hesitates to reach out. Feels disconnected during async moments.</p>
+  </div>
+  <div class="full-img-wrap" style="margin-top: 20px;">
+    <img src="s6.png" alt="Sarah's journey map — new joiner, overwhelmed and unsure" class="full-img" />
+    <p class="img-caption">Sarah — New joiner. Overwhelmed by Slack noise. Unsure who owns what. Feels like an outsider.</p>
+  </div>
+
+  <!-- Empathy Maps -->
+  <div class="img-section-label container" style="margin-top: 64px;">
+    <p class="img-section-tag">Empathy Maps</p>
+    <p class="img-section-desc">What they think, feel, say, and do — not just what they click.</p>
+  </div>
+
+  <div class="three-img-grid container">
+    <figure class="grid-fig">
+      <img src="s7.png" alt="Maya's empathy map — pains and gains of a remote designer" />
+      <figcaption>Maya · Remote Designer</figcaption>
+    </figure>
+    <figure class="grid-fig">
+      <img src="s8.png" alt="Arjun's empathy map — hybrid engineer out of sync" />
+      <figcaption>Arjun · Hybrid Engineer</figcaption>
+    </figure>
+    <figure class="grid-fig">
+      <img src="s9.png" alt="Sarah's empathy map — new joiner feeling like an outsider" />
+      <figcaption>Sarah · New Joiner</figcaption>
+    </figure>
+  </div>
+
+  <div class="container"><hr class="divider" /></div>
+
+  <!-- ── KEY INSIGHTS ── -->
+  <section class="container" id="insights">
+    <p class="section-eyebrow">Key Insights</p>
+    <h2 class="section-h2">Four things research<br />made undeniably <em>clear.</em></h2>
+    <div class="insight-row">
+      <div class="insight-num-card">
+        <span class="ins-num">01</span>
+        <p class="ins-title">Communication ≠ Presence</p>
+        <p class="ins-desc">Sending messages proves you're active. It doesn't make you feel part of the room.</p>
+      </div>
+      <div class="insight-num-card">
+        <span class="ins-num">02</span>
+        <p class="ins-title">Visibility today is intentional</p>
+        <p class="ins-desc">You have to work to be seen. Ambient awareness doesn't exist on Slack by default.</p>
+      </div>
+      <div class="insight-num-card">
+        <span class="ins-num">03</span>
+        <p class="ins-title">Small interactions matter most</p>
+        <p class="ins-desc">A quick "I'm working on this" matters more for team cohesion than a weekly status report.</p>
+      </div>
+      <div class="insight-num-card">
+        <span class="ins-num">04</span>
+        <p class="ins-title">Slack is efficient, not human</p>
+        <p class="ins-desc">Built for task communication. Not for the casual, ambient layer that makes people feel like a team.</p>
+      </div>
+    </div>
+
+    <!-- HMW -->
+    <div class="hmw-box">
+      <p class="hmw-label">Design opportunity</p>
+      <p class="hmw-q">How might we enable ambient presence<br />without adding noise?</p>
+    </div>
+
+    <div class="principle-row">
+      <div class="principle-card">
+        <p class="principle-icon">✦</p>
+        <p class="principle-title">Effortless visibility</p>
+        <p class="principle-desc">Presence should require no effort to broadcast</p>
+      </div>
+      <div class="principle-card">
+        <p class="principle-icon">◎</p>
+        <p class="principle-title">Low-pressure interaction</p>
+        <p class="principle-desc">Joining or sharing should never feel like an obligation</p>
+      </div>
+      <div class="principle-card">
+        <p class="principle-icon">~</p>
+        <p class="principle-title">Passive awareness</p>
+        <p class="principle-desc">Team activity should surface without demanding attention</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider" /></div>
+
+  <!-- ── SOLUTION INTRO ── -->
+  <section class="container" id="solution">
+    <p class="section-eyebrow">The Solution</p>
+    <h2 class="section-h2">Slack Circles — a new layer that makes<br /><em>ambient collaboration possible.</em></h2>
+    <p class="section-body">Circles lives inside Slack and introduces three interlocking features — each designed to reduce the effort of being visible while increasing the warmth of being part of a team.</p>
+  </section>
+
+  <!-- ── FEATURE 1: LIVE ── -->
+  <section class="container feature-section" id="live">
+    <span class="feature-tag">Feature 01 · Live Sessions</span>
+    <h3 class="feature-h">"I'm here, working on this."<br />Joinable. No scheduling required.</h3>
+    <p class="feature-body">Live lets anyone on the team broadcast a lightweight session — what they're working on, who's welcome to join. It appears in the Circles sidebar and vanishes when you leave.</p>
+    <div class="feature-detail-row">
+      <div class="feature-detail">
+        <p class="fd-title">Before</p>
+        <p class="fd-desc">Schedule a meeting. Send an invite. Wait. Hope people show up.</p>
+      </div>
+      <div class="feature-detail arrow-sep">→</div>
+      <div class="feature-detail">
+        <p class="fd-title">After</p>
+        <p class="fd-desc">Open a Live. Teammates see it. They join if they want. No pressure.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="full-img-wrap">
+    <img src="s2.png" alt="Live session modal — Give your live a title and start broadcasting to your team" class="full-img img-rounded" />
+    <p class="img-caption">The Live modal — lightweight, casual, no scheduling needed.</p>
+  </div>
+
+  <div class="full-img-wrap" style="margin-top: 20px;">
+    <img src="S1.jpg" alt="Circles main view showing live sessions with active teammates broadcasting" class="full-img img-rounded" />
+    <p class="img-caption">Live sessions appear in the Circles feed — teammates can see who's broadcasting and join with one click.</p>
+  </div>
+
+  <div class="container"><hr class="divider" /></div>
+
+  <!-- ── FEATURE 2: HIGHLIGHTS ── -->
+  <section class="container feature-section" id="highlights">
+    <span class="feature-tag">Feature 02 · Highlights</span>
+    <h3 class="feature-h">Quick, casual updates.<br />Visible for <em>3 days.</em></h3>
+    <p class="feature-body">Highlights are low-stakes status posts — a thought, a photo, a moment from your day. Not a report. Not a deliverable. Just a window into what you're doing, visible to your team without clogging channels.</p>
+    <div class="reasoning-box">
+      <p class="reasoning-label">Design reasoning</p>
+      <p class="reasoning-text">The 3-day visibility window was a deliberate choice. Permanent posts create pressure to post "worthy" content. Ephemeral posts (24hr) don't give passive readers enough time to catch up. 3 days hits the sweet spot — casual enough to share freely, persistent enough to be seen.</p>
+    </div>
+  </section>
+
+  <div class="full-img-wrap">
+    <img src="s3.png" alt="Circles main interface showing Highlights feed with teammate posts and live activity" class="full-img img-rounded" />
+    <p class="img-caption">Highlights in context — sitting alongside Live sessions in the Circles feed.</p>
+  </div>
+
+  <div class="container"><hr class="divider" /></div>
+
+  <!-- ── FEATURE 3: CIRCLES FEED ── -->
+  <section class="container feature-section" id="feed">
+    <span class="feature-tag">Feature 03 · Circles Feed</span>
+    <h3 class="feature-h">Live + async, together.<br />One surface. <em>Meaningful activity.</em></h3>
+    <p class="feature-body">The Circles feed combines Live sessions, Highlights, and Upcoming events into a single ambient view. Not a notification centre. Not a channel. A gentle, scrollable picture of what your team is up to — right now and recently.</p>
+    <div class="feature-detail-row">
+      <div class="feature-detail">
+        <p class="fd-title">My teams</p>
+        <p class="fd-desc">See activity from people you work with directly — filtered for signal, not noise.</p>
+      </div>
+      <div class="feature-detail">
+        <p class="fd-title">Everyone</p>
+        <p class="fd-desc">Browse company-wide — for new joiners like Sarah who want to understand the broader culture.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider" /></div>
+
+  <!-- ── EXPERIENCE SHIFT ── -->
+  <section class="container" id="shift">
+    <p class="section-eyebrow">Experience Shift</p>
+    <h2 class="section-h2">From intentional effort<br />to <em>ambient presence.</em></h2>
+    <div class="shift-grid">
+      <div class="shift-col shift-before">
+        <p class="shift-label">Before Circles</p>
+        <div class="shift-item">
+          <span class="shift-dot dot-before"></span>
+          <p>Schedule a meeting to sync</p>
+        </div>
+        <div class="shift-item">
+          <span class="shift-dot dot-before"></span>
+          <p>Post an update to be visible</p>
+        </div>
+        <div class="shift-item">
+          <span class="shift-dot dot-before"></span>
+          <p>DM someone to ask if they're free</p>
+        </div>
+        <div class="shift-item">
+          <span class="shift-dot dot-before"></span>
+          <p>Scroll channels to find what happened</p>
+        </div>
+        <div class="shift-item">
+          <span class="shift-dot dot-before"></span>
+          <p>Feel out of the loop by default</p>
+        </div>
+      </div>
+      <div class="shift-arrow">→</div>
+      <div class="shift-col shift-after">
+        <p class="shift-label">After Circles</p>
+        <div class="shift-item">
+          <span class="shift-dot dot-after"></span>
+          <p>Start a Live — join if you want</p>
+        </div>
+        <div class="shift-item">
+          <span class="shift-dot dot-after"></span>
+          <p>Post a Highlight in seconds</p>
+        </div>
+        <div class="shift-item">
+          <span class="shift-dot dot-after"></span>
+          <p>See who's active without asking</p>
+        </div>
+        <div class="shift-item">
+          <span class="shift-dot dot-after"></span>
+          <p>Circles feed surfaces what matters</p>
+        </div>
+        <div class="shift-item">
+          <span class="shift-dot dot-after"></span>
+          <p>Feel part of the team passively</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider" /></div>
+
+  <!-- ── USABILITY TESTING ── -->
+  <section class="container" id="testing">
+    <p class="section-eyebrow">Usability Testing</p>
+    <h2 class="section-h2">5 sessions. Real tasks.<br /><em>Honest feedback.</em></h2>
+    <p class="section-body">5 participants — a mix of designers and developers — were given the ProtoPie prototype and asked to complete three core tasks without guidance.</p>
+
+    <div class="tasks-row">
+      <div class="task-card">
+        <p class="task-num">Task 01</p>
+        <p class="task-title">Share an update</p>
+        <p class="task-desc">Post a Highlight to your team about what you're working on today.</p>
+      </div>
+      <div class="task-card">
+        <p class="task-num">Task 02</p>
+        <p class="task-title">Join a Live session</p>
+        <p class="task-desc">A teammate is broadcasting. Find it and join their session.</p>
+      </div>
+      <div class="task-card">
+        <p class="task-num">Task 03</p>
+        <p class="task-title">Understand team activity</p>
+        <p class="task-desc">Without asking anyone, find out what your team has been up to today.</p>
+      </div>
+    </div>
+
+    <!-- Quotes -->
+    <div class="quote-grid">
+      <div class="quote-card">
+        <p class="quote-text">"Feels low pressure — like I'm not committing to anything."</p>
+        <p class="quote-attr">— Participant 2, Designer</p>
+      </div>
+      <div class="quote-card">
+        <p class="quote-text">"More natural than joining a meeting. I can just pop in."</p>
+        <p class="quote-attr">— Participant 4, Developer</p>
+      </div>
+      <div class="quote-card">
+        <p class="quote-text">"I wasn't sure if Circles was a channel or something different."</p>
+        <p class="quote-attr">— Participant 1, Designer</p>
+      </div>
+      <div class="quote-card">
+        <p class="quote-text">"The Highlights feed feels like a nicer version of a status bar."</p>
+        <p class="quote-attr">— Participant 3, Developer</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider" /></div>
+
+  <!-- ── ITERATIONS ── -->
+  <section class="container" id="iterations">
+    <p class="section-eyebrow">Iterations</p>
+    <h2 class="section-h2">Four changes that made<br /><em>a real difference.</em></h2>
+
+    <div class="iteration-list">
+      <div class="iter-item">
+        <div class="iter-change">
+          <span class="iter-old">"Post"</span>
+          <span class="iter-arrow">→</span>
+          <span class="iter-new">"Share Highlight"</span>
+        </div>
+        <p class="iter-why">Testing showed "Post" felt like publishing. "Share Highlight" felt casual and intentional about the 3-day window.</p>
+      </div>
+      <div class="iter-item">
+        <div class="iter-change">
+          <span class="iter-old">No visibility timer</span>
+          <span class="iter-arrow">→</span>
+          <span class="iter-new">3-day visibility added</span>
+        </div>
+        <p class="iter-why">Without a timer, users worried about "cluttering" the feed. Adding "visible for 3 days" immediately reduced posting anxiety.</p>
+      </div>
+      <div class="iter-item">
+        <div class="iter-change">
+          <span class="iter-old">Circles = channel?</span>
+          <span class="iter-arrow">→</span>
+          <span class="iter-new">Circles = dedicated sidebar space</span>
+        </div>
+        <p class="iter-why">3 of 5 users initially thought Circles was a Slack channel. Added a dedicated sidebar item and onboarding tooltip to clarify.</p>
+      </div>
+      <div class="iter-item">
+        <div class="iter-change">
+          <span class="iter-old">Live felt formal</span>
+          <span class="iter-arrow">→</span>
+          <span class="iter-new">Live felt like a casual open door</span>
+        </div>
+        <p class="iter-why">Changed copy from "Start a meeting" to "Go Live" and softened button style. The tone shift measurably reduced hesitation to start a session.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="divider" /></div>
+
+  <!-- ── IMPACT ── -->
+  <section class="container" id="impact">
+    <p class="section-eyebrow">Impact</p>
+    <h2 class="section-h2">Not more tools.<br /><em>More presence.</em></h2>
+    <p class="section-body">Circles doesn't replace Slack channels or DMs. It adds the layer that was always missing — the ambient, human layer where teams feel like teams, not just groups of people sharing a workspace.</p>
+    <div class="impact-outcome-grid">
+      <div class="outcome-card">
+        <p class="outcome-icon">◎</p>
+        <p class="outcome-title">Better awareness</p>
+        <p class="outcome-desc">Team activity is visible without effort — passively surfaced, not actively broadcast.</p>
+      </div>
+      <div class="outcome-card">
+        <p class="outcome-icon">↗</p>
+        <p class="outcome-title">Faster collaboration</p>
+        <p class="outcome-desc">Live sessions enable spontaneous syncs without the overhead of scheduling.</p>
+      </div>
+      <div class="outcome-card">
+        <p class="outcome-icon">✦</p>
+        <p class="outcome-title">Reduced isolation</p>
+        <p class="outcome-desc">Passive visibility makes remote workers feel seen — even without a single DM sent.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── REFLECTION ── -->
+  <section class="container" id="reflection">
+    <div class="reflection-box">
+      <p class="reflection-eyebrow">Reflection</p>
+      <p class="reflection-quote">"The problem isn't a lack of tools.<br />It's a lack of <em>presence.</em>"</p>
+      <p class="reflection-body">The most interesting discovery in this project wasn't a feature — it was a reframe. Teams don't need more ways to communicate. They need a lower-effort way to exist together. Circles is designed around that insight: presence before communication, ambient before intentional.</p>
+      <p class="reflection-body">If I were taking this further, I'd want to measure whether Highlights actually reduce isolation scores over time — and whether Live sessions correlate with higher spontaneous collaboration rates. The hypothesis is strong. The longitudinal data would make it real.</p>
+      <a href="mailto:jayaprakashkavya01@gmail.com?subject=Slack Circles — Full Case Study" class="cta-btn">Email me for the full walkthrough →</a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <p class="footer-fun">Designed with chai &amp; a lot of curiosity~</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/kavyaj20/" target="_blank">linkedin</a>
+      <a href="mailto:jayaprakashkavya01@gmail.com">email</a>
+      <a href="../index.html#work">more work</a>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll-triggered reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.07 });
+
+    document.querySelectorAll(
+      '.feature-section, .section-h2, .problem-card, .insight-num-card, .quote-card, .task-card, .iter-item, .outcome-card, .three-img-grid, .full-img-wrap'
+    ).forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
